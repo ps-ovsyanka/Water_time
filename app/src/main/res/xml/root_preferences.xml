@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Основные настройки">
+
+        <EditTextPreference
+            app:iconSpaceReserved="false"
+            app:key="water_target"
+            app:title="Моя цель"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved = "false"
+        android:title="Ёмкости">
+
+        <EditTextPreference
+            android:defaultValue="200"
+            android:key="size_tare_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:iconSpaceReserved = "false"
+            android:defaultValue="300"
+            android:key="size_tare_2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:iconSpaceReserved = "false"
+            android:defaultValue="500"
+            android:key="size_tare_3"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

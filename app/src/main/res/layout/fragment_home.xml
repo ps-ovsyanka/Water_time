@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <ProgressBar
+        android:id="@+id/water_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="297dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="25dp"
+        android:indeterminate="false"
+        android:max="1750"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_slesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="40dp"
+        android:text="/"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tare_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_progress_bar" />
+
+    <TextView
+        android:id="@+id/water_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1750"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_slesh"
+        app:layout_constraintStart_toEndOf="@+id/text_slesh"
+        app:layout_constraintTop_toTopOf="@+id/text_slesh"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text_water_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_slesh"
+        app:layout_constraintEnd_toStartOf="@+id/text_slesh"
+        app:layout_constraintTop_toTopOf="@+id/text_slesh"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/tare_2"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="300"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancel"
+        tools:targetApi="m" />
+
+    <Button
+        android:id="@+id/tare_1"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250"
+        app:layout_constraintBottom_toBottomOf="@+id/tare_2"
+        app:layout_constraintEnd_toStartOf="@+id/tare_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tare_2"
+        tools:targetApi="m" />
+
+    <Button
+        android:id="@+id/tare_3"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        app:layout_constraintBottom_toBottomOf="@+id/tare_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tare_2"
+        app:layout_constraintTop_toTopOf="@+id/tare_2"
+        tools:targetApi="m" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="m" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
